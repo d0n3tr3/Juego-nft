@@ -1,3 +1,6 @@
+<?php
+include 'includes/database.php';
+?>
 <head>
     <meta charset="utf-8" />
     <title>Pàgina de test</title>
