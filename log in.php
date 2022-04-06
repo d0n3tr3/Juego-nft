@@ -14,16 +14,7 @@ include 'includes/header.php';
         <section>
             <selection>
                 <tableborder="1">
-                    <thead>
-                        <tr>
-                            <td>Fecha</td>
-                            <td>DNI </td>
-                            <td>Email</td>
-                            <td>Telefono</td>
-                            <td>Nombre</td>
-                            <td>Apellidos</td>
-                        </tr>
-                    </thead>
+                    <h1>Registrate </h1>
                     <tbody>
                         <form>
                             <input type="date" required placeholder="Fecha" />
