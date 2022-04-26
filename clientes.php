@@ -9,7 +9,7 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 
-<table>
+<tableborder>
   <tr>
     <th>Nom complet</th>
     <th>DIN</th>
@@ -25,7 +25,7 @@ include 'includes/header.php';
     <td>84502415Y</td>
     <td>FranciscoRosal@gmail.com</td>
   </tr>
-</table> 
+</tableborder> 
 <body>
     <header>
     </header>
