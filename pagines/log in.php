@@ -28,8 +28,9 @@ include 'includes/header.php';
                     </tbody>
                     </thead>
                 </tableborder>
-            </sellection>
+            </selection>
         </section>
+    </header>
 </body>
 
 </html>
