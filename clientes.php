@@ -12,7 +12,7 @@ include 'includes/header.php';
 <table>
   <tr>
     <th>Nom complet</th>
-    <th>DIN</th>
+    <th>DNI</th>
     <th>Email</th>
   </tr>
   <tr>
