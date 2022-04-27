@@ -42,18 +42,18 @@ include 'includes/header.php';
 </tr>
 </thead>
 <tbody>
-<?php
-$query = "SELECT * FROM test";
-$result = mysqli_query($dbh, $query);
-while ($row = mysqli_fetch_assoc($result)) {
-echo "<tr>
-<td>".$row['id']."</td>
-<td>".$row['nom']."</td>
-<td>".$row['pais']."</td>
-<td>".$row['cp']."</td>
-</tr>";
-}
-?>
+  <?php
+  $query = "SELECT * FROM cryptomoneda";
+  $result = mysqli_query($dbh, $query);
+  while ($row = mysqli_fetch_assoc($result)) {
+    echo "<tr>
+    <td>".$row['id']."</td>
+    <td>".$row['nom']."</td>
+    <td>".$row['pais']."</td>
+    <td>".$row['cp']."</td>
+    </tr>";
+  }
+  ?>
 </tbody>
 </table> 
     </header>
