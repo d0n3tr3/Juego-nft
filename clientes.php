@@ -8,39 +8,7 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<<<<<<< HEAD
-
 <table>
-<<<<<<< HEAD
-  <tr>
-    <th>Nom complet</th>
-    <th>DNI</th>
-    <th>Email</th>
-  </tr>
-  <tr>
-    <td>Maria Anders</td>
-    <td>47329103H</td>
-    <td>MariaAnders@gmail.com</td>
-  </tr>
-  <tr>
-    <td>Francisco Rosal</td>
-    <td>84502415Y</td>
-    <td>FranciscoRosal@gmail.com</td>
-  </tr>
-</table> 
-=======
->>>>>>> dani
-=======
-<thead>
-<tr>
-<td>ID</td>
-<td>NOM</td>
-<td>CP</td>
-<td>PAIS</td>
-<td>DNI</td>
-<td>GMAIL</td>
-</tr>
-</thead>
 <tbody>
 <?php
 $query = "SELECT * FROM usuari";
@@ -58,7 +26,6 @@ echo "<tr>
 ?>
 </tbody>
 </table>
->>>>>>> Fernando
 <body>
   <section>
     <header>
