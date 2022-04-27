@@ -11,6 +11,7 @@ include 'includes/header.php';
 <<<<<<< HEAD
 
 <table>
+<<<<<<< HEAD
   <tr>
     <th>Nom complet</th>
     <th>DNI</th>
@@ -29,6 +30,35 @@ include 'includes/header.php';
 </table> 
 =======
 >>>>>>> dani
+=======
+<thead>
+<tr>
+<td>ID</td>
+<td>NOM</td>
+<td>CP</td>
+<td>PAIS</td>
+<td>DNI</td>
+<td>GMAIL</td>
+</tr>
+</thead>
+<tbody>
+<?php
+$query = "SELECT * FROM usuari";
+$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+while ($row = mysqli_fetch_assoc($result)) {
+echo "<tr>
+<td>".$row['idusuari']."</td>
+<td>".$row['nom']."</td>
+<td>".$row['cp']."</td>
+<td>".$row['pais']."</td>
+<td>".$row['DNI']."</td>
+<td>".$row['Gmail']."</td>
+</tr>";
+}
+?>
+</tbody>
+</table>
+>>>>>>> Fernando
 <body>
   <section>
     <header>
