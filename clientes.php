@@ -8,52 +8,8 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<<<<<<< HEAD
+<HEAD>
 
-<table>
-  <tr>
-    <th>Nom complet</th>
-    <th>DNI</th>
-    <th>Email</th>
-  </tr>
-  <tr>
-    <td>Maria Anders</td>
-    <td>47329103H</td>
-    <td>MariaAnders@gmail.com</td>
-  </tr>
-  <tr>
-    <td>Francisco Rosal</td>
-    <td>84502415Y</td>
-    <td>FranciscoRosal@gmail.com</td>
-  </tr>
-</table> 
-=======
->>>>>>> dani
-<body>
-  <section>
-    <header>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom complet</th>
-            <th>DIN</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Maria Anders</td>
-            <td>47329103H</td>
-            <td>MariaAnders@gmail.com</td>
-          </tr>
-          <tr>
-            <td>Francisco Rosal</td>
-            <td>84502415Y</td>
-            <td>FranciscoRosal@gmail.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
 <thead>
 <tr>
 <td>ID</td>
