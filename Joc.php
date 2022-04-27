@@ -14,24 +14,18 @@ include 'includes/header.php';
 <tr>
 <td>ID</td>
 <td>NOM</td>
-<td>CP</td>
-<td>PAIS</td>
-<td>DNI</td>
-<td>GMAIL</td>
+<td>TOKEN</td>
 </tr>
 </thead>
 <tbody>
 <?php
-$query = "SELECT * FROM usuari";
+$query = "SELECT * FROM JOC";
 $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
 while ($row = mysqli_fetch_assoc($result)) {
 echo "<tr>
-<td>".$row['idusuari']."</td>
+<td>".$row['idjoc']."</td>
 <td>".$row['nom']."</td>
-<td>".$row['cp']."</td>
-<td>".$row['pais']."</td>
-<td>".$row['DNI']."</td>
-<td>".$row['Gmail']."</td>
+<td>".$row['token']."</td>
 </tr>";
 }
 ?>
