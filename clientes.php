@@ -8,49 +8,8 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+
 <table>
-<tbody>
-<?php
-$query = "SELECT * FROM usuari";
-$result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-while ($row = mysqli_fetch_assoc($result)) {
-echo "<tr>
-<td>".$row['idusuari']."</td>
-<td>".$row['nom']."</td>
-<td>".$row['cp']."</td>
-<td>".$row['pais']."</td>
-<td>".$row['DNI']."</td>
-<td>".$row['Gmail']."</td>
-</tr>";
-}
-?>
-</tbody>
-</table>
-<body>
-  <section>
-    <header>
-      <table>
-        <thead>
-          <tr>
-            <th>Nom complet</th>
-            <th>DIN</th>
-            <th>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Maria Anders</td>
-            <td>47329103H</td>
-            <td>MariaAnders@gmail.com</td>
-          </tr>
-          <tr>
-            <td>Francisco Rosal</td>
-            <td>84502415Y</td>
-            <td>FranciscoRosal@gmail.com</td>
-          </tr>
-        </tbody>
-      </table>
-      <table>
 <thead>
 <tr>
 <td>ID</td>
