@@ -8,10 +8,7 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<<<<<<< HEAD
-=======
 <header>
->>>>>>> Work_GAME-NFT
 <table>
 <thead>
 <tr>
@@ -40,12 +37,8 @@ include 'includes/header.php';
   ?>
 </tbody>
 </table> 
-<<<<<<< HEAD
 <header>
 </header>
- 
 </body>
-=======
 </header>
->>>>>>> Work_GAME-NFT
 </html>
