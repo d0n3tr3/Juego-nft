@@ -19,6 +19,7 @@ include 'includes/header.php';
                         <form>
                             <input type="text" minlength="1" maxlength="20" required placeholder="Nombre" />
                             <input type="text" minlength="1" maxlength="30" required placeholder="Apellidos" />
+                            <input type="text" placeholder="DNI" />
                             <input type="text" placeholder="DIN" />
                             <input type="date" required placeholder="Fecha" />
                             <input type="email" minlenght="11" maxlength="40" required placeholder="Email" />

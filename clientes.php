@@ -8,15 +8,19 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+<<<<<<< HEAD
+=======
+<header>
+>>>>>>> Work_GAME-NFT
 <table>
 <thead>
 <tr>
-<td>ID</td>
-<td>NOM</td>
-<td>PAIS</td>
-<td>CP</td>
-<td>DNI</td>
-<td>Gmail</td>
+  <td>ID</td>
+  <td>NOM</td>
+  <td>PAIS</td>
+  <td>CP</td>
+  <td>DNI</td>
+  <td>Gmail</td>
 </tr>
 </thead>
 <tbody>
@@ -36,8 +40,12 @@ include 'includes/header.php';
   ?>
 </tbody>
 </table> 
+<<<<<<< HEAD
 <header>
 </header>
  
 </body>
+=======
+</header>
+>>>>>>> Work_GAME-NFT
 </html>
