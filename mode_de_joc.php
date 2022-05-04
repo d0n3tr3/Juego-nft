@@ -7,7 +7,8 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<table border="1">
+<div class="mt-3"></div>
+<table class="table">
 <thead>
 <tr>
 <th>ID</td>

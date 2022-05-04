@@ -7,13 +7,14 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-
+<div class="mt-3"></div>
 Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos tokens.
+<div class="mt-3"></div>
+<body>
+  
 
-
-<table border="1">
+<table class="table">
 <thead>
-<caption>Información de los juegos<caption>
 <tr>
 <th>ID</td>
 <th>Nombre</td>
@@ -34,5 +35,5 @@ Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos token
   ?>
 </tbody>
 </table>
-
+</body>
 </html>

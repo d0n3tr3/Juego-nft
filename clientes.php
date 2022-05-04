@@ -9,7 +9,7 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 <header>
-<table border="1">
+<table class="table">
 <thead>
 <tr>
   <th>ID</td>

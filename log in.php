@@ -8,13 +8,14 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-
+<div class="mt-3"></div>
 <body>
     <header>
         <section>
             <selection>
-                <tableborder="1">
+                <table>
                     <h1>Registrate </h1>
+                    <div class="mt-3"></div>
                     <tbody>
                         <form>
                             <input type="text" minlength="1" maxlength="20" required placeholder="Nombre" />
@@ -28,7 +29,7 @@ include 'includes/header.php';
                         </form>
                     </tbody>
                     </thead>
-                </tableborder>
+                </table>
             </selection>
         </section>
     </header>
