@@ -8,16 +8,21 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+<<<<<<< HEAD
 
 <table>
+=======
+<header>
+<table class="table">
+>>>>>>> dani
 <thead>
 <tr>
-<td>ID</td>
-<td>NOM</td>
-<td>PAIS</td>
-<td>CP</td>
-<td>DNI</td>
-<td>Gmail</td>
+  <th>ID</td>
+  <th>Nombre</td>
+  <th>PAIS</td>
+  <th>CP</td>
+  <th>DNI</td>
+  <th>Gmail</td>
 </tr>
 </thead>
 <tbody>
@@ -37,7 +42,8 @@ include 'includes/header.php';
   ?>
 </tbody>
 </table> 
-    </header>
-  </section>
+<header>
+</header>
 </body>
+</header>
 </html>
