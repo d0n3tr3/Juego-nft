@@ -9,12 +9,9 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 
-<table>
 <header>
 <div class="mt-3"></div>
-
 <table class="table">
-  
 <thead>
 <tr>
   <th>ID</td>

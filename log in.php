@@ -17,7 +17,7 @@ include 'includes/header.php';
                     <h1>Registrate </h1>
                     <div class="mt-3"></div>
                     <tbody>
-                        <form>
+                    <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -58,7 +58,6 @@ include 'includes/header.php';
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
                     </tbody>
                     </thead>
                 </table>
