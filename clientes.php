@@ -10,17 +10,27 @@ include 'includes/header.php';
 ?>
 <<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
 <table>
 =======
+>>>>>>> main
 <header>
+<div class="mt-3"></div>
+
 <table class="table">
+<<<<<<< HEAD
+
+=======
 >>>>>>> dani
+>>>>>>> main
 <thead>
 <tr>
   <th>ID</td>
   <th>Nombre</td>
-  <th>PAIS</td>
   <th>CP</td>
+  <th>Pais</td>
   <th>DNI</td>
   <th>Gmail</td>
 </tr>
