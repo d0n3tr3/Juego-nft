@@ -16,15 +16,47 @@ include 'includes/header.php';
                 <tableborder="1">
                     <h1>Registrate </h1>
                     <tbody>
-                        <form>
-                            <input type="text" minlength="1" maxlength="20" required placeholder="Nombre" />
-                            <input type="text" minlength="1" maxlength="30" required placeholder="Apellidos" />
-                           <input type="text" placeholder="DNI" />
-                            <input type="date" required placeholder="Fecha" />
-                            <input type="email" minlenght="11" maxlength="40" required placeholder="Email" />
-                            <input type="tel" min="0" max="9" placeholder="tel." />
-                            <button type="submit">Enviar</button>
-                        </form>
+                    <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="Gmail" class="form-text"> </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="Nombre" class="form-text"> </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Pais</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="Pais natal" class="form-text"> </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">CP</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">CP</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">DNI</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="DNI" class="form-text"> </div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
                     </tbody>
                     </thead>
                     </tableborder>
