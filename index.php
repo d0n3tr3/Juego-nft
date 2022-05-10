@@ -11,7 +11,7 @@ include 'includes/header.php';
 <div class="mt-3"></div>
 <body>
     <header>
-		<h1>Sobre Nosotros</h1>
+		<h1>Sobre Nustra empresa</h1>
 		<div class="mt-3"></div>
 		<h3>¿Qué somos?</h3>
 		<div class="mt-3"></div>
