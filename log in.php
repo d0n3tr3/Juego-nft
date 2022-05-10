@@ -12,7 +12,7 @@ include 'includes/header.php';
 <div class="mt-4"></div>
 <h1>Registrate</h1>
 <div class="mb-3"></div>
-        <section class="container">
+  <section class="container">
           
                     
 <div class="mb-4"></div>
@@ -58,7 +58,7 @@ include 'includes/header.php';
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-        </section>
+  </section>
 </body>
 
 </html>
