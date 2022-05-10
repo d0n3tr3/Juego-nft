@@ -8,12 +8,23 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+<table>
+=======
+>>>>>>> main
 <header>
 <div class="mt-3"></div>
 
 <table class="table">
+<<<<<<< HEAD
 
+=======
+>>>>>>> dani
+>>>>>>> main
 <thead>
 <tr>
   <th>ID</td>
