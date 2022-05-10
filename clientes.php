@@ -10,14 +10,19 @@ include 'includes/header.php';
 ?>
 
 <table>
+<header>
+<div class="mt-3"></div>
+
+<table class="table">
+  
 <thead>
 <tr>
-<td>ID</td>
-<td>NOM</td>
-<td>PAIS</td>
-<td>CP</td>
-<td>DNI</td>
-<td>Gmail</td>
+  <th>ID</td>
+  <th>Nombre</td>
+  <th>CP</td>
+  <th>Pais</td>
+  <th>DNI</td>
+  <th>Gmail</td>
 </tr>
 </thead>
 <tbody>
@@ -37,7 +42,8 @@ include 'includes/header.php';
   ?>
 </tbody>
 </table> 
-    </header>
-  </section>
+<header>
+</header>
 </body>
+</header>
 </html>
