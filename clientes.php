@@ -8,14 +8,18 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+
 <header>
+<div class="mt-3"></div>
+
 <table class="table">
+
 <thead>
 <tr>
   <th>ID</td>
   <th>Nombre</td>
-  <th>PAIS</td>
   <th>CP</td>
+  <th>Pais</td>
   <th>DNI</td>
   <th>Gmail</td>
 </tr>
