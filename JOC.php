@@ -28,8 +28,8 @@ Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos token
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
     <td>".$row['idjoc']."</td>
-    <td>".$row['token']."</td>
     <td>".$row['nombre']."</td>
+    <td>".$row['token']."</td>
     </tr>";
   }
   ?>

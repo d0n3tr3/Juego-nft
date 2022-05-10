@@ -9,14 +9,13 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<div class="mt-4"></div>
+                    
 <h1>Registrate</h1>
 <div class="mb-3"></div>
   <section class="container">
+<div class="mt-4"></div>
           
-                    
 <div class="mb-4"></div>
-<form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -58,7 +57,12 @@ include 'includes/header.php';
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-  </section>
+                    </tbody>
+                    </thead>
+                </table>
+            </selection>
+        </section>
+    </header>
 </body>
 
 </html>
