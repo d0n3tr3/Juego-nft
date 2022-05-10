@@ -11,8 +11,6 @@ include 'includes/header.php';
 Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos tokens.
 <div class="mt-3"></div>
 <body>
-  
-
 <table class="table">
 <thead>
 <tr>
