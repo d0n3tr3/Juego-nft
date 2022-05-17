@@ -70,7 +70,12 @@ include 'includes/header.php';
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-  </section>
+                    </tbody>
+                    </thead>
+                </table>
+            </selection>
+        </section>
+    </header>
 </body>
 
 </html>
