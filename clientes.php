@@ -34,6 +34,7 @@ echo "<tr>
 <td>".$row['pais']."</td>
 <td>".$row['DNI']."</td>
 <td>".$row['Gmail']."</td>
+<td><a class='btn btn.primary' href='log in.php'>Editar</a></td>
 </tr>";
 }
 ?>

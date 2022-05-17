@@ -9,6 +9,20 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 
+<?php
+$client = null;
+if(isset($_GET['idusuari'])){
+    $idusuari = $_GET['idusuari'];
+    $query = "SELECT * FROM clients WHERE id = '$idusuari' ";
+    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+    $client = mysqli_fetch_assoc($result);
+}
+
+$action = 'scripts/insert_client.php';
+if($client != null){
+    $action = 'scripts/update_client.php';
+}
+?>
 <body>
     <header>
         <section>
@@ -42,11 +56,6 @@ include 'includes/header.php';
     <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">CP</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
-  </div>
-  <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">DNI</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="DNI" class="form-text"> </div>
@@ -55,6 +64,11 @@ include 'includes/header.php';
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
   </div>
+  <?php 
+    if($client){
+    echo "<input type='hidden' value='".$client['id']."' name='id'>";
+}
+?>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
                     </tbody>
