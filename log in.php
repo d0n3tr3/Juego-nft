@@ -5,17 +5,35 @@
 include 'includes/head.php';
 ?>
 
+<?php
+$_idusuari = null;
+if(isset($get["id"])){
+  $_idusuari = $_get["id"];
+}
+$action = "scripts/formulario_cliente.php";
+if($_idusuari != null){
+$action ="scripts/formulario_cliente.php";
+}
+?>
 <body>
+
+<section class="container">
 <?php
 include 'includes/header.php';
 ?>
-                    
-<h1>Registrate</h1>
-<div class="mb-3"></div>
-  <section class="container">
-<div class="mt-4"></div>
-          
+<?php
+    if($_idusuari == null){
+      echo 'NOU CLIENT';
+    }else{
+      echo 'EDITA EL CLIENT';
+    }
+?>
+    </section>
+
+    <section>
+                            
 <div class="mb-4"></div>
+<form action="<?=$action?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -23,7 +41,7 @@ include 'includes/header.php';
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="Nombre" class="form-text"> </div>
   </div>
   <div class="mb-3">
@@ -32,22 +50,17 @@ include 'includes/header.php';
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Pais</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="Pais natal" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">CP</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
-  </div>
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">CP</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">DNI</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="DNI" class="form-text"> </div>
   </div>
   <div class="mb-3 form-check">
