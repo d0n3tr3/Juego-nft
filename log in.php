@@ -8,7 +8,7 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
-<div class="mt-3"></div>
+
 <body>
     <header>
         <section>
@@ -43,11 +43,6 @@ include 'includes/header.php';
     <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">CP</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
-  </div>
-  <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">DNI</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="DNI" class="form-text"> </div>
@@ -56,6 +51,11 @@ include 'includes/header.php';
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
   </div>
+  <?php 
+    if($client){
+    echo "<input type='hidden' value='".$client['id']."' name='id'>";
+}
+?>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
                     </tbody>
