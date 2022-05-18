@@ -8,27 +8,15 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+<div class="mt-3"></div>
 
-<?php
-$client = null;
-if(isset($_GET['idusuari'])){
-    $idusuari = $_GET['idusuari'];
-    $query = "SELECT * FROM clients WHERE id = '$idusuari' ";
-    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-    $client = mysqli_fetch_assoc($result);
-}
-
-$action = 'scripts/insert_client.php';
-if($client != null){
-    $action = 'scripts/update_client.php';
-}
-?>
 <body>
     <header>
         <section>
             <selection>
-                <tableborder="1">
+                <table>
                     <h1>Registrate </h1>
+                    <div class="mt-3"></div>
                     <tbody>
                     <form>
   <div class="mb-3">
@@ -73,9 +61,10 @@ if($client != null){
 </form>
                     </tbody>
                     </thead>
-                    </tableborder>
-                    </sellection>
+                </table>
+            </selection>
         </section>
+    </header>
 </body>
 
 </html>

@@ -14,12 +14,12 @@ include 'includes/header.php';
 <table class="table">
 <thead>
 <tr>
-<td>ID</td>
-<td>NOM</td>
-<td>CP</td>
-<td>PAIS</td>
-<td>DNI</td>
-<td>GMAIL</td>
+  <th>ID</td>
+  <th>Nombre</td>
+  <th>CP</td>
+  <th>Pais</td>
+  <th>DNI</td>
+  <th>Gmail</td>
 </tr>
 </thead>
 <tbody>
@@ -34,14 +34,13 @@ echo "<tr>
 <td>".$row['pais']."</td>
 <td>".$row['DNI']."</td>
 <td>".$row['Gmail']."</td>
-<td><a class='btn btn.primary' href='log in.php'>Editar</a></td>
 </tr>";
 }
 ?>
 </tbody>
-</table>
-<body>
-    <header>
-    </header>
+</table> 
+<header>
+</header>
 </body>
+</header>
 </html>
