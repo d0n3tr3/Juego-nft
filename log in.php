@@ -4,7 +4,9 @@
 <?php
 include 'includes/head.php';
 ?>
-
+<?php
+include 'includes/header.php';
+?>
 <?php
 $_idusuari = null;
 if(isset($get["id"])){
@@ -16,11 +18,6 @@ $action ="scripts/formulario_cliente.php";
 }
 ?>
 <body>
-
-<section class="container">
-<?php
-include 'includes/header.php';
-?>
 <?php
     if($_idusuari == null){
       echo 'NOU CLIENT';
@@ -28,6 +25,9 @@ include 'includes/header.php';
       echo 'EDITA EL CLIENT';
     }
 ?>
+<section class="container">
+
+
     </section>
 
     <section>
@@ -35,7 +35,7 @@ include 'includes/header.php';
 <div class="mb-4"></div>
 <form action="<?=$action?>" method="POST">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="exampleInputEmail1" class="form-label">Email </label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="Gmail" class="form-text"> </div>
   </div>
