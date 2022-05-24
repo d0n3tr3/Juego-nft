@@ -6,14 +6,15 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 <?php
+
 $Gmail = $_POST['Gmail'];
 $Pais = $_POST['Pais'];
 $CP = $_POST['CP'];
 $Nombre = $_POST['Nombre'];
-$DNI = $_POST['DNI'];
 $Pasword = $_POST['Pasword'];
+$DNI = $_POST['DNI'];
 
-$query = "INSERT INTO clientes (Nombre, Gmail, CP, Pais, DNI, Pasword) VALUES('$Nombre', '$Gmail', '$CP', '$Pais','$DNI', '$Pasword')";
+$query = "UPDATE clientes SET Nombre = '$Nombre', Gmail = '$Gmail', Pasword = '$Pasword' CP = '$CP', Pais = '$Pais' WHERE DNI = '$DNI' ";
 
 $result = mysqli_query($dbh, $query);
 
@@ -22,4 +23,5 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+
 ?>
