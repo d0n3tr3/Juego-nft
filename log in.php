@@ -67,6 +67,11 @@ $action ="scripts/formulario_cliente.php";
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
   </div>
+  <?php 
+    if($client){
+    echo "<input type='hidden' value='".$client['id']."' name='id'>";
+}
+?>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
