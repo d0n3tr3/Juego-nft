@@ -15,4 +15,8 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+<<<<<<< HEAD
 ?>S
+=======
+?>
+>>>>>>> Fernado

@@ -2,7 +2,11 @@
 include '../includes/database.php'
 ?>
 <?php
+<<<<<<< HEAD
 $Dificultat=$_POST['dificultat'];
+=======
+$Dificultat = $_POST['dificultat'];
+>>>>>>> Fernado
 $Ganancias = $_POST['Ganancias'];
 
 
