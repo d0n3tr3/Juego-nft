@@ -68,11 +68,15 @@ $action ="scripts/formulario_cliente.php";
     <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
   </div>
   <?php 
+    
     if($client){
     echo "<input type='hidden' value='".$client['id']."' name='id'>";
-}
+}else{
+      echo 'EDITA EL CLIENT';
+    }
 ?>
   <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
 
                     </tbody>

@@ -14,7 +14,6 @@ $DNI = $_POST['DNI'];
 $Pasword = $_POST['Pasword'];
 
 $query = "INSERT INTO clientes (Nombre, Gmail, CP, Pais, DNI, Pasword) VALUES('$Nombre', '$Gmail', '$CP', '$Pais','$DNI', '$Pasword')";
-
 $result = mysqli_query($dbh, $query);
 
 if($result){
