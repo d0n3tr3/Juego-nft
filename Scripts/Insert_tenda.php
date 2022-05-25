@@ -1,7 +1,7 @@
 <?php
 include '../includes/database.php'
-
-
+?>
+<?php
 $Nom_tenda = $_POST['nom'];
 $Token_tenda = $_POST['token'];
 
@@ -15,3 +15,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>

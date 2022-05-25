@@ -1,7 +1,7 @@
 <?php
 include '../includes/database.php'
-
-
+?>
+<?php
 $Nombre = $_POST['nombre'];
 $Token = $_POST['token'];
 
@@ -15,3 +15,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>

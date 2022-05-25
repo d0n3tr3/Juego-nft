@@ -1,7 +1,7 @@
 <?php
 include '../includes/database.php'
-
-
+?>
+<?php
 $Gmail = $_POST['Gmail'];
 $pais = $_POST['pais'];
 $cp = $_POST['cp'];
@@ -17,3 +17,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>
