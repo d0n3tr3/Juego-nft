@@ -1,7 +1,8 @@
 <?php
 include '../includes/database.php'
+?>
 
-
+<?php
 $Dificultat = $_POST['dificultat'];
 $Ganancias = $_POST['Ganancias'];
 
@@ -15,3 +16,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>
