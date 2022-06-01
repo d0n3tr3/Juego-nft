@@ -9,17 +9,18 @@ include 'includes/header.php';
 ?>
 <?php
 $idusuari = null;
-if(isset($_get["idusuari"])){
-  
-  $idusuari = $_get["idusuari"];
-}
-$query = "SELECT * FROM usuari WHERE idusuari = '$idusuari' ";
+$client = null;
+if(isset($_GET["id"])){
+  $idusuari = $_GET["id"];
+  $query = "SELECT * FROM usuari WHERE idusuari = '$idusuari' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
     $client = mysqli_fetch_assoc($result);
+}
+
 
 $action = "Scripts/insert_client.php";
 if($idusuari != null){
-  $action ="Scripts/insert_client.php";
+  $action ="Scripts/update_client.php";
 }
 ?>
 <body>
