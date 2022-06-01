@@ -1,10 +1,6 @@
 <?php
 include '../includes/database.php'
 ?>
-<<<<<<< HEAD
-
-=======
->>>>>>> Fernado
 <?php
 $Gmail = $_POST['Gmail'];
 $pais = $_POST['pais'];

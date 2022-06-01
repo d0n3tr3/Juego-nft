@@ -8,18 +8,23 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 <?php
-$_idusuari = null;
-if(isset($get["id"])){
-  $_idusuari = $_get["id"];
+$idusuari = null;
+if(isset($_get["idusuari"])){
+  
+  $idusuari = $_get["idusuari"];
 }
-$action = "scripts/formulario_cliente.php";
-if($_idusuari != null){
-$action ="scripts/formulario_cliente.php";
+$query = "SELECT * FROM usuari WHERE idusuari = '$idusuari' ";
+    $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
+    $client = mysqli_fetch_assoc($result);
+
+$action = "Scripts/insert_client.php";
+if($idusuari != null){
+  $action ="Scripts/insert_client.php";
 }
 ?>
 <body>
 <?php
-    if($_idusuari == null){
+    if($idusuari == null){
       echo 'NOU CLIENT';
     }else{
       echo 'EDITA EL CLIENT';
@@ -67,12 +72,14 @@ $action ="scripts/formulario_cliente.php";
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
     <label class="form-check-label" for="exampleCheck1">Pulsa para confirmar que no eres un bot</label>
   </div>
+  
   <?php 
-    
-    if($client){
-    echo "<input type='hidden' value='".$client['id']."' name='id'>";
-}else{
-      echo 'EDITA EL CLIENT';
+  
+if($idusuari){
+    echo "<input type='hidden' value='".$idusuari['id']."' name='id'>";
+}
+else{
+    echo 'EDITA EL CLIENT';
     }
 ?>
   <button type="submit" class="btn btn-primary">Submit</button>
