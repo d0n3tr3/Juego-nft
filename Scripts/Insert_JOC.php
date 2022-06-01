@@ -1,10 +1,9 @@
 <?php
 include '../includes/database.php'
-
-
+?>
+<?php
 $Nombre = $_POST['nombre'];
 $Token = $_POST['token'];
-
 
 $query = "INSERT INTO JOC (nombre, token) VALUES('$Nombre', '$Token')";
 
@@ -15,3 +14,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>

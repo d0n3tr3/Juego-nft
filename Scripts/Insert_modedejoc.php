@@ -1,10 +1,9 @@
 <?php
 include '../includes/database.php'
-
-
-$Dificultat = $_POST['dificultat'];
+?>
+<?php
+$Dificultat=$_POST['dificultat'];
 $Ganancias = $_POST['Ganancias'];
-
 
 $query = "INSERT INTO mode_de_joc (dificultat, Gananacias) VALUES('$Dificultat', '$Ganancias')";
 
@@ -15,3 +14,4 @@ if($result){
 }else{
     echo mysqli_error($dbh);
 }
+?>

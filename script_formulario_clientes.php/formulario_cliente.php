@@ -9,7 +9,7 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 
-<form action="insertar-client.html" method="POST">
+<form action="clientes.php" method="POST">
            
                     <form>
                         <formfield>
@@ -49,7 +49,7 @@ include 'includes/header.php';
                     <h2>H2</h2>
                 </div>
                 <div>
-                    <form action="insertar-client.html" method="POST">
+                    <form action="insert_client.php" method="POST">
                         <formfield>
                         <div>
                                 <label>DNI</label>
