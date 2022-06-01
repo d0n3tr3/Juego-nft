@@ -20,6 +20,7 @@ include 'includes/header.php';
   <th>Pais</td>
   <th>DNI</td>
   <th>Gmail</td>
+  <th>Pasw</td>
 </tr>
 </thead>
 <tbody>
@@ -34,6 +35,7 @@ echo "<tr>
 <td>".$row['pais']."</td>
 <td>".$row['DNI']."</td>
 <td>".$row['Gmail']."</td>
+<td>".$row['Pasw']."</td>
 <td><a class='btn btn-danger' href='Scripts/Delete_client.php?id=" .$row['idusuari']."'>Eliminar</a></td>
 <td><a class='btn btn-primary' href='log_in.php?id=" .$row['idusuari']."'>Editar</a></td>
 
