@@ -20,7 +20,7 @@ if(isset($_GET["id"])){
 
 $action = "Scripts/insert_client.php";
 if($idusuari != null){
-  $action ="Scripts/update_client.php";
+  $action ="Scripts/Update_client.php";
 }
 ?>
 <body>
