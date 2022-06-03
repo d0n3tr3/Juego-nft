@@ -8,7 +8,7 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 <div class="mt-3"></div>
-
+<a class='btn btn-primary' href="edita_mode_de_joc.php?id=">Log in</a>
 <table class="table">
 <thead>
 <tr>
