@@ -76,7 +76,11 @@ if($idusuari != null){
   
  
   <button type="submit" class="btn btn-primary">Submit</button>
+<<<<<<< HEAD:log_in.php
 
+=======
+  
+>>>>>>> Fernado:log in.php
 </form>
 
                     </tbody>

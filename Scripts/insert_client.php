@@ -1,6 +1,7 @@
 <?php
 include '../includes/database.php'
 ?>
+
 <?php
 $Gmail = $_POST['Gmail'];
 $pais = $_POST['pais'];
@@ -9,7 +10,11 @@ $Pasw = $_POST['Pasw'];
 $nom_client = $_POST['nom'];
 $DNI = $_POST['DNI'];
 
+<<<<<<< HEAD
 $query = "INSERT INTO usuari(nom, Gmail, cp, pais, Pasw, DNI) VALUES('$nom_client', '$Gmail', '$cp', '$pais', '$Pasw', '$DNI')";
+=======
+$query = "INSERT INTO usuari (nom, Gmail, cp, Pasw, pais, DNI) VALUES('$nom_client', '$Gmail', '$cp', '$Pasw', '$pais', '$DNI')";
+>>>>>>> Fernado
 
 $result = mysqli_query($dbh, $query);
 
