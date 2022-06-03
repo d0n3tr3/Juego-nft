@@ -13,21 +13,21 @@ $idtenda = null;
 $Tenda = null;
 if(isset($_GET["id"])){
   $idtenda = $_GET["id"];
-  $query = "SELECT * FROM Tenda WHERE idtenda = '$tenda' ";
+  $query = "SELECT * FROM Tenda WHERE idtenda = '$idtenda' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
     $Tenda = mysqli_fetch_assoc($result);
 }
 
 
-$action = "Scripts/insert_tenda.php";
+$action = "Scripts/Insert_tenda.php";
 if($idtenda != null){
-  $action ="Scripts/Update_JOC.php";
+  $action ="Scripts/Update_tenda.php";
 }
 ?>
 <body>
 
 <?php
-    if($idjoc == null){
+    if($idtenda == null){
       echo 'NOU OBJECTE';
     }else{
       echo 'EDITA EL OBJECTE';
@@ -36,7 +36,7 @@ if($idtenda != null){
 <section class="container">
 
 </section>
-<a class='btn btn-primary' href="edita_joc.php?id=">Log in</a>
+<a class='btn btn-primary' href="edita_tenda.php?id=">Log in</a>
 <section>
                             
 <div class="mb-4"></div>
@@ -47,7 +47,7 @@ if($idtenda != null){
     <div id="emailHelp" name="nombre" class="form-text"> </div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Token</label>
+    <label for="exampleInputEmail1" class="form-label">TOKEN</label>
     <input value="<?=$Tenda['token'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="token" class="form-text"> </div>
   </div>

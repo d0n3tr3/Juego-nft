@@ -12,13 +12,13 @@ $id_mode_de_joc = null;
 $mode_de_joc = null;
 if(isset($_GET["id"])){
   $id_mode_de_joc = $_GET["id"];
-  $query = "SELECT * FROM JOC WHERE idjoc = '$id_mode_de_joc' ";
+  $query = "SELECT * FROM mode_de_joc WHERE id_mode_de_joc = '$id_mode_de_joc' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
     $mode_de_joc = mysqli_fetch_assoc($result);
 }
 
 
-$action = "Scripts/insert_modedejoc.php";
+$action = "Scripts/Insert_modedejoc.php";
 if($id_mode_de_joc != null){
   $action ="Scripts/Update_modedejoc.php";
 }
