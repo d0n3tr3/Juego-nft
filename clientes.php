@@ -11,6 +11,7 @@ include 'includes/header.php';
 
 <header>
 <div class="mt-3"></div>
+<a class='btn btn-primary' href="log_in.php?id=">Log in</a>
 <table class="table">
 <thead>
 <tr>

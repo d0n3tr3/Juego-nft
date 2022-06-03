@@ -14,7 +14,7 @@ include 'includes/header.php';
 <thead>
 <tr>
 <td>ID</td>
-<td>NOM</td>
+<td>NOMBRE</td>
 <td>TOKEN</td>
 </tr>
 </thead>

@@ -26,6 +26,8 @@ include 'includes/header.php';
     <td>".$row['id_mode_de_joc']."</td>
     <td>".$row['dificultat']."</td>
     <td>".$row['Ganancias']."</td>
+    <td><a class='btn btn-danger' href='Scripts/Delete_modedejoc.php?id=" .$row['id_mode_de_joc']."'>Eliminar</a></td>
+    <td><a class='btn btn-primary' href='edita_mode_de_joc.php?id=" .$row['id_mode_de_joc']."'>Editar</a></td>
     </tr>";
   }
   ?>

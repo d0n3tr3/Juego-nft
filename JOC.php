@@ -7,9 +7,11 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+
 <div class="mt-3"></div>
 Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos tokens.
 <div class="mt-3"></div>
+<a class='btn btn-primary' href="edita_joc.php?id=">Log in</a>
 <body>
 <table class="table">
 <thead>

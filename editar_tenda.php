@@ -7,28 +7,30 @@ include 'includes/head.php';
 <?php
 include 'includes/header.php';
 ?>
+
 <?php
-$idjoc = null;
-$JOC = null;
+$idtenda = null;
+$Tenda = null;
 if(isset($_GET["id"])){
-  $idjoc = $_GET["id"];
-  $query = "SELECT * FROM JOC WHERE idjoc = '$idjoc' ";
+  $idtenda = $_GET["id"];
+  $query = "SELECT * FROM Tenda WHERE idtenda = '$tenda' ";
     $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
-    $JOC = mysqli_fetch_assoc($result);
+    $Tenda = mysqli_fetch_assoc($result);
 }
 
 
-$action = "Scripts/insert_JOC.php";
-if($idjoc != null){
+$action = "Scripts/insert_tenda.php";
+if($idtenda != null){
   $action ="Scripts/Update_JOC.php";
 }
 ?>
 <body>
+
 <?php
     if($idjoc == null){
-      echo 'NOU JOC';
+      echo 'NOU OBJECTE';
     }else{
-      echo 'EDITA EL JOC';
+      echo 'EDITA EL OBJECTE';
     }
 ?>
 <section class="container">
@@ -41,12 +43,12 @@ if($idjoc != null){
 <form action="<?=$action?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input value="<?=$JOC['nombre'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input value="<?=$Tenda['nombre'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="nombre" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Token</label>
-    <input value="<?=$JOC['token'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input value="<?=$Tenda['token'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     <div id="emailHelp" name="token" class="form-text"> </div>
   </div>
   <div class="mb-3 form-check">
