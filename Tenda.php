@@ -9,12 +9,13 @@ include 'includes/head.php';
 include 'includes/header.php';
 ?>
 <div class="mt-3"></div>
+<a class='btn btn-primary' href="edita_tenda.php?id=">Log in</a>
 <table>
 <table class="table"> 
 <thead>
 <tr>
 <td>ID</td>
-<td>NOM</td>
+<td>NOMBRE</td>
 <td>TOKEN</td>
 </tr>
 </thead>
@@ -28,6 +29,8 @@ echo "<tr>
 <td>".$row['idtenda']."</td>
 <td>".$row['nom']."</td>
 <td>".$row['token']."</td>
+<td><a class='btn btn-danger' href='Scripts/Delete_tenda.php?id=" .$row['idtenda']."'>Eliminar</a></td>
+<td><a class='btn btn-primary' href='edita_tenda.php?id=" .$row['idtenda']."'>Editar</a></td>
 </tr>";
 }
 ?>

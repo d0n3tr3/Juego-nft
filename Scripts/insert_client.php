@@ -1,14 +1,16 @@
 <?php
 include '../includes/database.php'
 ?>
+
 <?php
 $Gmail = $_POST['Gmail'];
 $pais = $_POST['pais'];
 $cp = $_POST['cp'];
+$Pasw = $_POST['Pasw'];
 $nom_client = $_POST['nom'];
 $DNI = $_POST['DNI'];
 
-$query = "INSERT INTO clients (nom, Gmail, cp, pais, DNI) VALUES('$nom_client', '$Gmail', '$cp', '$pais', '$DNI')";
+$query = "INSERT INTO usuari (nom, Gmail, cp, pais, Pasw, DNI) VALUES ('$nom_client', '$Gmail', '$cp', '$pais', '$Pasw', '$DNI')";
 
 $result = mysqli_query($dbh, $query);
 
