@@ -1,11 +1,10 @@
 <?php
 include '../includes/database.php';
 
-$nombre = $_POST['nom'];
-$token = $_POST['token'];
-$idjoc = $_POST['idjoc'];
 
-$query = "DELETE * FROM JOC WHERE idjoc = '$idjoc' ";
+$idjoc = $_POST['id'];
+
+$query = "DELETE  FROM JOC WHERE idjoc = '$idjoc' ";
 
 $result = mysqli_query($dbh, $query);
 

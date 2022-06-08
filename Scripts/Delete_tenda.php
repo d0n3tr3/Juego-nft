@@ -1,11 +1,9 @@
 <?php
 include '../includes/database.php';
 
-$Nom_tenda = $_GET['nom'];
-$Token = $_GET['token'];
-$idtenda = $_GET['idtenda'];
+$idtenda = $_GET['id'];
 
-$query = "DELETE * FROM tenda WHERE idtenda = '$idtenda' ";
+$query = "DELETE FROM Tenda WHERE idtenda='$idtenda' ";
 
 $result = mysqli_query($dbh, $query);
 

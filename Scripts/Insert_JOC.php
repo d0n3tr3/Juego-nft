@@ -2,7 +2,7 @@
 include '../includes/database.php'
 ?>
 <?php
-$nombre = $_POST['nom'];
+$nom = $_POST['nom'];
 $token = $_POST['token'];
 
 $query = "INSERT INTO JOC (nom, token) VALUES('$nom', '$token')";
