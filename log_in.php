@@ -22,26 +22,15 @@ $action = "Scripts/insert_client.php";
 if($idusuari != null){
   $action ="Scripts/Update_client.php";
 }
-
-  
-  $Gmail = $_POST['Gmail'];
-  $pais = $_POST['pais'];
-  $cp = $_POST['cp'];
-  $nom_client = $_POST['nom'];
-  $Pasw = $_POST['Pasw'];
-  $idusuari = $_POST['idusuari'];
-  $DNI = $_POST['DNI'];
-  
-  $query = "UPDATE usuari SET nom = '$nom_client', Gmail = '$Gmail',Pasw ='$Pasw', cp = '$cp', pais = '$pais' WHERE idusuari = '$idusuari' ";
-  
-  $result = mysqli_query($dbh, $query);
+<?
+<body>
   
   if($result){
       header('Location: ../clientes.php');
   }else{
       echo mysqli_error($dbh);
   }
-  ?>pts/Update_client.php";
+  ?>"../Update_client.php";
 }
 ?>
 <body>
