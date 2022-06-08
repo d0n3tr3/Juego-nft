@@ -1,11 +1,11 @@
 <?php
 include '../includes/database.php';
 
-$nom_tenda = $_GET['nom'];
-$idtenda = $_GET['idtenda'];
-$Token = $_GET['token'];
+$nom = $_POST['nom'];
+$idtenda = $_POST['idtenda'];
+$Token = $_POST['token'];
 
-$query = "UPDATE tenda SET nom = '$nom_tenda', token = '$Token' WHERE idtendda = '$idtenda' ";
+$query = "UPDATE Tenda SET nom = '$nom', token = '$Token' WHERE idtenda = '$idtenda' ";
 
 $result = mysqli_query($dbh, $query);
 

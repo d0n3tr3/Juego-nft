@@ -7,14 +7,10 @@ $Gmail = $_POST['Gmail'];
 $pais = $_POST['pais'];
 $cp = $_POST['cp'];
 $Pasw = $_POST['Pasw'];
-$nom_client = $_POST['nom'];
+$nom = $_POST['nom'];
 $DNI = $_POST['DNI'];
 
-<<<<<<< HEAD
-$query = "INSERT INTO usuari(nom, Gmail, cp, pais, Pasw, DNI) VALUES('$nom_client', '$Gmail', '$cp', '$pais', '$Pasw', '$DNI')";
-=======
-$query = "INSERT INTO usuari (nom, Gmail, cp, Pasw, pais, DNI) VALUES('$nom_client', '$Gmail', '$cp', '$Pasw', '$pais', '$DNI')";
->>>>>>> Fernado
+$query = "INSERT INTO usuari (nom, Gmail, cp, pais, Pasw, DNI) VALUES ('$nom', '$Gmail', '$cp', '$pais', '$Pasw', '$DNI')";
 
 $result = mysqli_query($dbh, $query);
 

@@ -11,7 +11,7 @@ $query = "INSERT INTO Tenda (nom, token) VALUES('$Nom_tenda', '$Token_tenda')";
 $result = mysqli_query($dbh, $query);
 
 if($result){
-    header('Location: ../mode_de_joc.php');
+    header('Location: ../Tenda.php');
 }else{
     echo mysqli_error($dbh);
 }

@@ -1,19 +1,21 @@
 <?php
 include '../includes/database.php';
 
-$Gmail = $_GET['Gmail'];
-$pais = $_GET['pais'];
-$cp = $_GEt['cp'];
-$nom_client = $_GET['nom'];
-$idusuari = $_GEt['idusuari'];
-$DNI = $_GET['DNI'];
+$Gmail = $_POST['Gmail'];
+$pais = $_POST['pais'];
+$cp = $_POST['cp'];
+$nom= $_POST['nom'];
+$Pasw = $_POST['Pasw'];
+$idusuari = $_POST['idusuari'];
+$DNI = $_POST['DNI'];
 
-$query = "UPDATE usuari SET nom = '$nom_client', Gmail = '$Gmail', cp = '$cp', pais = '$pais' WHERE idusuari = '$idusuari' ";
+$query = "UPDATE usuari SET nom = '$nom', Gmail = '$Gmail',Pasw ='$Pasw', cp = '$cp', pais = '$pais' WHERE idusuari = '$idusuari' ";
 
 $result = mysqli_query($dbh, $query);
 
 if($result){
-    header('Location: ../log_in.php');
+   header('Location: ../clientes.php');
 }else{
     echo mysqli_error($dbh);
 }
+?>
