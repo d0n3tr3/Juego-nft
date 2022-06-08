@@ -1,8 +1,8 @@
 <?php
 include '../includes/database.php';
 
-$Nombre = $_POST['nombre'];
-$Token = $_POST['token'];
+$nombre = $_POST['nombre'];
+$token = $_POST['token'];
 $idjoc = $_POST['idjoc'];
 
 $query = "DELETE * FROM clients WHERE idjoc = '$idjoc' ";
