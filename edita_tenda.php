@@ -43,8 +43,8 @@ if($idtenda != null){
 <form action="<?=$action?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input value="<?=$Tenda['nombre'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="nombre" class="form-text"> </div>
+    <input value="<?=$Tenda['nom'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" name="nom" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">TOKEN</label>

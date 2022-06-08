@@ -39,6 +39,7 @@ if($idjoc != null){
                             
 <div class="mb-4"></div>
 <form action="<?=$action?>" method="POST">
+    <input type="hidden" name="idjoc" value="<?=$JOC['idjoc']?>"/> 
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
     <input value="<?=$JOC['nombre'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
