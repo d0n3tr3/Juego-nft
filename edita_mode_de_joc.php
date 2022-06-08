@@ -39,6 +39,7 @@ if($id_mode_de_joc != null){
                             
 <div class="mb-4"></div>
 <form action="<?=$action?>" method="POST">
+    <input type="hidden" name="id_mode_de_joc" value="<?=$mode_de_joc['id_mode_de_joc']?>"/>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Dificultad</label>
     <input name="dificultat" value="<?=$mode_de_joc['dificultat'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">

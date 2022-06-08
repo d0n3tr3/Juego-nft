@@ -28,7 +28,7 @@ Estos son los diferentes tipos de juegos que ofrecemos con sus respectivos token
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
     <td>".$row['idjoc']."</td>
-    <td>".$row['nombre']."</td>
+    <td>".$row['nom']."</td>
     <td>".$row['token']."</td>
     <td><a class='btn btn-danger' href='Scripts/Delete_JOC.php?id=" .$row['idjoc']."'>Eliminar</a></td>
     <td><a class='btn btn-primary' href='edita_joc.php?id=" .$row['idjoc']."'>Editar</a></td>
