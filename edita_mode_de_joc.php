@@ -41,13 +41,13 @@ if($id_mode_de_joc != null){
 <form action="<?=$action?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Dificultad</label>
-    <input value="<?=$mode_de_joc['dificultat'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="dificultat" class="form-text"> </div>
+    <input name="dificultat" value="<?=$mode_de_joc['dificultat'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp"  class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Ganancias</label>
-    <input value="<?=$mode_de_joc['Ganancias'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Ganancias" class="form-text"> </div>
+    <input name="Ganancias" value="<?=$mode_de_joc['Ganancias'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp"  class="form-text"> </div>
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">

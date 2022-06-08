@@ -5,7 +5,7 @@ $nom = $_POST['nom'];
 $idtenda = $_POST['idtenda'];
 $Token = $_POST['token'];
 
-$query = "UPDATE tenda SET nom = '$nom', token = '$Token' WHERE idtendda = '$idtenda' ";
+$query = "UPDATE Tenda SET nom = '$nom', token = '$Token' WHERE idtenda = '$idtenda' ";
 
 $result = mysqli_query($dbh, $query);
 
