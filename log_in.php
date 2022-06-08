@@ -22,6 +22,27 @@ $action = "Scripts/insert_client.php";
 if($idusuari != null){
   $action ="Scripts/Update_client.php";
 }
+
+  
+  $Gmail = $_POST['Gmail'];
+  $pais = $_POST['pais'];
+  $cp = $_POST['cp'];
+  $nom_client = $_POST['nom'];
+  $Pasw = $_POST['Pasw'];
+  $idusuari = $_POST['idusuari'];
+  $DNI = $_POST['DNI'];
+  
+  $query = "UPDATE usuari SET nom = '$nom_client', Gmail = '$Gmail',Pasw ='$Pasw', cp = '$cp', pais = '$pais' WHERE idusuari = '$idusuari' ";
+  
+  $result = mysqli_query($dbh, $query);
+  
+  if($result){
+      header('Location: ../clientes.php');
+  }else{
+      echo mysqli_error($dbh);
+  }
+  ?>pts/Update_client.php";
+}
 ?>
 <body>
 <?php
@@ -42,13 +63,13 @@ if($idusuari != null){
 <form action="<?=$action?>" method="POST">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email </label>
-    <input value="<?=$client['Gmail'];?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Gmail" class="form-text"> </div>
+    <input name="Gmail" value="<?=$client['Gmail'];?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp"  class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre</label>
-    <input value="<?=$client['nom'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Nombre" class="form-text"> </div>
+    <input name="Nombre"value="<?=$client['nom'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -56,18 +77,18 @@ if($idusuari != null){
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Pais</label>
-    <input value="<?=$client['pais'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Pais natal" class="form-text"> </div>
+    <input name="Pais natal" value="<?=$client['pais'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">CP</label>
-    <input value="<?=$client['cp'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="Codigo postal" class="form-text"> </div>
+    <input name="Codigo postal"value="<?=$client['cp'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"> </div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">DNI</label>
-    <input value="<?=$client['DNI'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <div id="emailHelp" name="DNI" class="form-text"> </div>
+    <input name="DNI" value="<?=$client['DNI'];?>" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text"> </div>
   </div>
   <div class="mb-3 form-check">
     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -76,11 +97,6 @@ if($idusuari != null){
   
  
   <button type="submit" class="btn btn-primary">Submit</button>
-<<<<<<< HEAD:log_in.php
-
-=======
-  
->>>>>>> Fernado:log in.php
 </form>
 
                     </tbody>
