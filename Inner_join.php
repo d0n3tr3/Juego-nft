@@ -26,18 +26,18 @@ include 'includes/header.php';
 </thead>
 <tbody>
 <?php
-$query = "SELECT idusuari, nom AS nom.usuari, cp, pais, DNI, Gmail, Pasw, token, nombre AS nom.JOC FROM usuari INNER JOIN JOC";
+$query = "SELECT idusuari, nom, cp, pais, DNI, Gmail, Pasw, token, nombre FROM usuari INNER JOIN JOC";
 $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
 while ($row = mysqli_fetch_assoc($result)) {
 echo "<tr>
 <td>".$row['idusuari']."</td>
-<td>".$row['nom.usuari']."</td>
+<td>".$row['nom']."</td>
 <td>".$row['cp']."</td>
 <td>".$row['pais']."</td>
 <td>".$row['DNI']."</td>
 <td>".$row['Gmail']."</td>
 <td>".$row['token']."</td>
-<td>".$row['nom.JOC']."</td>
+<td>".$row['nombre']."</td>
 </tr>";
 }
 ?>
