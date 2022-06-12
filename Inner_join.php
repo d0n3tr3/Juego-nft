@@ -16,7 +16,7 @@ include 'includes/header.php';
 <thead>
 <tr>
   <th>ID</td>
-  <th>Nom</td>
+  <th>Nombre</td>
   <th>CP</td>
   <th>Pais</td>
   <th>DNI</td>
@@ -28,19 +28,19 @@ include 'includes/header.php';
 </thead>
 <tbody>
 <?php
-  $query = "SELECT idusuari, nom, cp, pais, DNI, Gmail, Pasw, token, nombre FROM usuari INNER JOIN JOC";
+  $query = "SELECT idusuari, nombre, cp, pais, DNI, Gmail, Pasw, token, nom FROM usuari INNER JOIN JOC";
   $result = mysqli_query($dbh, $query) or die(mysqli_error($dbh));
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
     <td>".$row['idusuari']."</td>
-    <td>".$row['nom']."</td>
+    <td>".$row['nombre']."</td>
     <td>".$row['cp']."</td>
     <td>".$row['pais']."</td>
     <td>".$row['DNI']."</td>
     <td>".$row['Gmail']."</td>
     <td>".$row['Pasw']."</td>
     <td>".$row['token']."</td>
-    <td>".$row['nombre']."</td>
+    <td>".$row['nom']."</td>
     <td><a class='btn btn-danger' href='Scripts/Delete_client.php?id=" .$row['idusuari']."'>Eliminar</a></td>
     <td><a class='btn btn-primary' href='log_in.php?id=" .$row['idusuari']."'>Editar</a></td>
 
