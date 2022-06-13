@@ -1,7 +1,7 @@
 <?php
 include '../includes/database.php';
 
-$nombre = $_POST['nom'];
+$nom = $_POST['nom'];
 $token = $_POST['token'];
 $idjoc = $_POST['idjoc'];
 
