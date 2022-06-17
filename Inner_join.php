@@ -33,14 +33,14 @@ include 'includes/header.php';
   while ($row = mysqli_fetch_assoc($result)) {
     echo "<tr>
     <td>".$row['idusuari']."</td>
-    <td>".$row['nombre']."</td>
+    <td>".$row['nom']."</td>
     <td>".$row['cp']."</td>
     <td>".$row['pais']."</td>
     <td>".$row['DNI']."</td>
     <td>".$row['Gmail']."</td>
     <td>".$row['Pasw']."</td>
     <td>".$row['token']."</td>
-    <td>".$row['nom']."</td>
+    <td>".$row['nombre']."</td>
     <td><a class='btn btn-danger' href='Scripts/Delete_client.php?id=" .$row['idusuari']."'>Eliminar</a></td>
     <td><a class='btn btn-primary' href='log_in.php?id=" .$row['idusuari']."'>Editar</a></td>
 

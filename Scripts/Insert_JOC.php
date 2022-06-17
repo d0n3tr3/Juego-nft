@@ -2,10 +2,10 @@
 include '../includes/database.php'
 ?>
 <?php
-$nom = $_POST['nom'];
+$nombre = $_POST['nombre'];
 $token = $_POST['token'];
 
-$query = "INSERT INTO JOC (nom, token) VALUES('$nom', '$token')";
+$query = "INSERT INTO JOC (nombre, token) VALUES('$nombre', '$token')";
 
 $result = mysqli_query($dbh, $query);
 

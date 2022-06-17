@@ -1,11 +1,11 @@
 <?php
 include '../includes/database.php';
 
-$nom = $_POST['nom'];
+$nombre = $_POST['nombre'];
 $token = $_POST['token'];
 $idjoc = $_POST['idjoc'];
 
-$query = "UPDATE JOC SET nom = '$nom', token = '$token' WHERE idjoc= '$idjoc' ";
+$query = "UPDATE JOC SET nombre = '$nombre', token = '$token' WHERE idjoc= '$idjoc' ";
 
 $result = mysqli_query($dbh, $query);
 

@@ -17,10 +17,13 @@ a{
 div{
   margin-top: 10px;
   margin-left: 300px;
-  
+  margin-right: 300px;
 }
 tr{
   table-layout: auto;
+}
+button{
+  margin-left: 300px;
 }
 
 
